@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Horizontal Scroll</title>
+
+<style>
+body {
+  margin: 0;
+  overflow-x:  hidden; /*hides the horizontal scroll of the body*/
+}
+
+/* IMPORTANT: limit width so overflow happens */
+.container {
+  width: 100%;
+  overflow: hidden;
+  background-color: blue;
+  padding: 10px;
+}
+
+/* Slider */
+.slider {
+  display: flex;
+  overflow-x: scroll; /* force scroll */
+  gap: 15px;
+  padding: 20px;
+  scroll-behavior: smooth;
+  border: 2px solid rgb(100, 84, 84); /* just to see it */
+  background-color: cyan;
+}
+
+/* Images */
+.slider img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  flex-shrink: 0; /* VERY IMPORTANT */
+}
+
+
+
+/* scrollbar container */
+.slider::-webkit-scrollbar {
+  height: 10px; /* horizontal scrollbar height */
+}
+
+/* track (background) */
+.slider::-webkit-scrollbar-track {
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+/* draggable thumb */
+.slider::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 10px;
+}
+
+/* hover effect */
+.slider::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+</style>
+<style>
+    .container2{
+        width: 100%;
+    }.container2 .slider2{
+        display: flex;
+        overflow-x: scroll;
+        gap: 10px;
+    }
+    .container2 img{
+        height: 250px;
+        padding: 20px;
+    }
+    .slider2::-webkit-scrollbar-thumb{
+        border-radius: 10px;
+        background: rgb(67, 71, 71);
+    }
+    .slider2::-webkit-scrollbar{
+        height: 10px;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="slider">
+    <img src="https://picsum.photos/id/1015/600/400">
+    <img src="https://picsum.photos/id/1016/600/400">
+    <img src="https://picsum.photos/id/1018/600/400">
+    <img src="https://picsum.photos/id/1020/600/400">
+    <img src="https://picsum.photos/id/1024/600/400">
+    <img src="https://picsum.photos/id/1025/600/400">
+    <img src="https://picsum.photos/id/1035/600/400">
+  </div>
+</div>
+<br><br><br><br>
+
+<div class="container2">
+    <div class="slider2">
+      <img src="https://picsum.photos/id/1015/600/400">
+      <img src="https://picsum.photos/id/1016/600/400">
+      <img src="https://picsum.photos/id/1018/600/400">
+      <img src="https://picsum.photos/id/1020/600/400">
+      <img src="https://picsum.photos/id/1024/600/400">
+      <img src="https://picsum.photos/id/1025/600/400">
+      <img src="https://picsum.photos/id/1035/600/400">
+    </div>
+  </div>
+
+</body>
+</html>
