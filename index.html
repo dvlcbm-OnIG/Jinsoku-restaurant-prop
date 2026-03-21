@@ -10,6 +10,16 @@
 </head>
 <body>
     <a href="#background1"><button id="scrollUp"><i class="fa-solid fa-arrow-up"></i></button></a>
+    <nav class="cart-menu" id="cartMenu">
+        <div class="header">
+            <h1 style=" color: black;">Your Cart</h1>
+            <i class="fa-solid fa-x" id="closeCart"></i>
+        </div>
+        <hr>
+        <main>
+
+        </main>
+    </nav>
     <header>
         <h1>AAR Restaurant </h1>
         <nav>
@@ -20,7 +30,10 @@
                 <a href="#contact"><li>CONTACT</li></a>
             </ul>
         </nav>
-        <button>Explore</button>
+        <div class="more">
+            <button id="openCart"><i class="fa-solid fa-cart-arrow-down"></i></button>
+            <button>Explore</button>
+        </div>
      </header>
     <section class="background1" id="background1" >
         <div class="description">
@@ -629,5 +642,6 @@
             </div>
         </nav>
     </footer>
+    <script src="../script/cart-menu.js"></script>
 </body>
 </html>
