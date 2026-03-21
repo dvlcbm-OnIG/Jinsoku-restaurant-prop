@@ -118,6 +118,11 @@ header button:hover{
     transition: 0.2s ease;
     border: 1px solid var(--orange);
 }
+
+header .more #openCart{
+    background-color: transparent;
+    border: none;
+}
 .background1{
     display: flex;
     align-items: center;
