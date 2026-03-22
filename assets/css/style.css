@@ -55,6 +55,7 @@ body{
     border-radius: 5px;
     border: 1px solid var(--orange);
     cursor: pointer;
+    z-index: 10;
 }
 #scrollUp:hover,
 #scrollUp:active{
@@ -185,7 +186,7 @@ header .more #openCart{
     height: 10px;
 }
 .section-2 .slider::-webkit-scrollbar-thumb{
-    background: #ffffff;
+    background: black;
     border-radius: 5px;
 }
 .section-2 .slider .img-container{
